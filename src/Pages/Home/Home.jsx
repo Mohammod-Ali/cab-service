@@ -15,6 +15,7 @@ const Home = () => {
 
     const [roundTrip, setRoundTrip] = useState(true)
     const [localTrip, setLocalTrip] = useState(false)
+    const [airport, setAirport] = useState(false)
 
   return (
     <>
@@ -29,7 +30,7 @@ const Home = () => {
               Outstation
             </button>
             <button onClick={() => setLocalTrip(true)}>Local</button>
-            <button>Airport</button>
+            <button onClick={() => setAirport(true)}>Airport</button>
           </div>
         </div>
        {
@@ -53,7 +54,7 @@ const Home = () => {
               Explore 
             </button>
           </form>
-:
+            :
             roundTrip ? <form className="form-style" action="">
             <input type="text" placeholder="From" />
             <input type="text" placeholder="To" />
@@ -73,23 +74,11 @@ const Home = () => {
             Explore Cabs
           </button>
         </form>
+       
+        
         }
         
-        
-        {/* {
-             localTrip ? <form className="form-style" action="">
-             <input type="text" placeholder="From" />
-             <input type="text" placeholder="To" />
-             <input type="date" name="" id="" placeholder="Pick Up Date"/>
-             <button style={{ backgroundColor: "#38B000", color: "white",  }}>
-               Explore 
-             </button>
-           </form>
-           :
-           setLocalTrip(true)
 
-        } */}
-        
       </div>
       {/* form section end */}
       <div>
