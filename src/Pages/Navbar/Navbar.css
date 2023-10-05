@@ -1,0 +1,12 @@
+.navbar{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
