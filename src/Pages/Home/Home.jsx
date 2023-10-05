@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import car from "../../assets/seodata-image 1.png";
 import handLogo from "../../assets/hand-holding-up-a-sprout-svgrepo-com 1.png";
@@ -12,6 +12,10 @@ import money from "../../assets/money-recive.png";
 import banner from "../../assets/Road Trip by car image 1.png";
 
 const Home = () => {
+
+    const [roundTrip, setRoundTrip] = useState(true)
+    const [localTrip, setLocalTrip] = useState(false)
+
   return (
     <>
       <div>
@@ -21,29 +25,71 @@ const Home = () => {
       <div>
         <div className="dFlex">
           <div className="form-btn">
-            <button style={{ backgroundColor: "#38B000", color: "white" }}>
+            <button onClick={() => setLocalTrip(false)} style={{ backgroundColor: "#38B000", color: "white" }}>
               Outstation
             </button>
-            <button>Local</button>
+            <button onClick={() => setLocalTrip(true)}>Local</button>
             <button>Airport</button>
           </div>
         </div>
-        <div className="dFlex">
-          <div className="form-btn">
-            <button style={{ backgroundColor: "#38B000", color: "white" }}>
-              One Way
-            </button>
-            <button>Round Trip</button>
+       {
+            localTrip ? ' ' :  <div className="dFlex">
+            <div className="form-btn">
+              <button onClick={() => setRoundTrip(true)} style={{ backgroundColor: "#38B000", color: "white" }}>
+                One Way
+              </button>
+              <button onClick={() => setRoundTrip(false)}>Round Trip</button>
+            </div>
           </div>
-        </div>
-        <form className="form-style" action="">
+       }
+       
+        
+        { 
+            localTrip ? <form className="form-style" action="">
+            <input type="text" placeholder="From" />
+            <input type="text" placeholder="To" />
+            <input type="date" name="" id="" placeholder="Pick Up Date"/>
+            <button style={{ backgroundColor: "#38B000", color: "white",  }}>
+              Explore 
+            </button>
+          </form>
+:
+            roundTrip ? <form className="form-style" action="">
+            <input type="text" placeholder="From" />
+            <input type="text" placeholder="To" />
+            <input type="date" name="" id="" placeholder="Pick Up Date"/>
+            <button style={{ backgroundColor: "#38B000", color: "white",  }}>
+              Explore Cabs
+            </button>
+          </form>
+          :
+          <form className="form-style" action="">
           <input type="text" placeholder="From" />
           <input type="text" placeholder="To" />
           <input type="date" name="" id="" placeholder="Pick Up Date"/>
+          <input type="date" name="" id="" placeholder="Return Date"/>
+          <input type="time" name="" id="" placeholder="Pick Up At" />
           <button style={{ backgroundColor: "#38B000", color: "white",  }}>
             Explore Cabs
           </button>
         </form>
+        }
+        
+        
+        {/* {
+             localTrip ? <form className="form-style" action="">
+             <input type="text" placeholder="From" />
+             <input type="text" placeholder="To" />
+             <input type="date" name="" id="" placeholder="Pick Up Date"/>
+             <button style={{ backgroundColor: "#38B000", color: "white",  }}>
+               Explore 
+             </button>
+           </form>
+           :
+           setLocalTrip(true)
+
+        } */}
+        
       </div>
       {/* form section end */}
       <div>
