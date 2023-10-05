@@ -17,6 +17,35 @@ const Home = () => {
       <div>
         <img className="banner-img" src={banner} alt="Road Trip by car" />
       </div>
+      {/* form section */}
+      <div>
+        <div className="dFlex">
+          <div className="form-btn">
+            <button style={{ backgroundColor: "#38B000", color: "white" }}>
+              Outstation
+            </button>
+            <button>Local</button>
+            <button>Airport</button>
+          </div>
+        </div>
+        <div className="dFlex">
+          <div className="form-btn">
+            <button style={{ backgroundColor: "#38B000", color: "white" }}>
+              One Way
+            </button>
+            <button>Round Trip</button>
+          </div>
+        </div>
+        <form className="form-style" action="">
+          <input type="text" placeholder="From" />
+          <input type="text" placeholder="To" />
+          <input type="date" name="" id="" placeholder="Pick Up Date"/>
+          <button style={{ backgroundColor: "#38B000", color: "white",  }}>
+            Explore Cabs
+          </button>
+        </form>
+      </div>
+      {/* form section end */}
       <div>
         <h1 className="heading text-clr">
           ​Indias Leading One-Way Inter-City Cab Service Provider
@@ -192,10 +221,9 @@ const Home = () => {
           <li>
             <span className="text-bold">Service You Can Trust -</span> At Yatri
             Car Rental, we are dedicated to providing dependable services in
-            INDIA. We guarantee that we wont cancel any bookings without
-            advance notification, and our rental cars are meticulously
-            maintained to ensure a seamless and stress-free journey for our
-            clients.
+            INDIA. We guarantee that we wont cancel any bookings without advance
+            notification, and our rental cars are meticulously maintained to
+            ensure a seamless and stress-free journey for our clients.
           </li>
           <li>
             <span className="text-bold">Safety is Our Priority -</span> Safety

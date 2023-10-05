@@ -21,16 +21,17 @@
 }
 .newsFrom h3{
     margin-right: 30px;
+    justify-content: center;
 }
 
 
-form{
+.footer-form{
     display: flex;
     width: fit-content;
     border: 10px;
     
 }
-form input{
+.footer-form input{
     border: 5px;
     padding: 10px 20px;
     height: 50px;
@@ -39,7 +40,7 @@ form input{
     border-top-left-radius: 30px;
     border-end-start-radius: 30px;
 }
-form button{
+.footer-form button{
     background-color: #2F313C;
     color: white;
     width: 100px;
