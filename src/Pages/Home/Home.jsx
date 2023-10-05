@@ -9,13 +9,17 @@ import flag from "../../assets/flag.png";
 import mobile from "../../assets/mobile.png";
 import people from "../../assets/people.png";
 import money from "../../assets/money-recive.png";
+import banner from "../../assets/Road Trip by car image 1.png";
 
 const Home = () => {
   return (
     <>
       <div>
+        <img className="banner-img" src={banner} alt="Road Trip by car" />
+      </div>
+      <div>
         <h1 className="heading text-clr">
-          ​India's Leading One-Way Inter-City Cab Service Provider
+          ​Indias Leading One-Way Inter-City Cab Service Provider
         </h1>
         <div className="dFlex">
           <div>
@@ -67,7 +71,9 @@ const Home = () => {
           <img src={carImg} alt="carImg" />
         </div>
         <div>
-          <h2 style={{textAlign:'center'}} className="upperCase text-clr">Why choose Yatri Car Rental?</h2>
+          <h2 style={{ textAlign: "center" }} className="upperCase text-clr">
+            Why choose Yatri Car Rental?
+          </h2>
           <div className="dFlex">
             <div>
               <div className="car-card">
@@ -83,7 +89,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div  className="car-card">
+              <div className="car-card">
                 <div>
                   <img src={mobile} alt="mobile" />
                 </div>
@@ -97,31 +103,32 @@ const Home = () => {
               </div>
             </div>
             <div>
-            <div className="car-card">
-              <div>
-                <img src={people} alt="people" />
+              <div className="car-card">
+                <div>
+                  <img src={people} alt="people" />
+                </div>
+                <div>
+                  <h3>Vast fleet</h3>
+                  <p>
+                    We have all kinds of Car on Rent available like Sedan, Suv,
+                    Muv, Premium Sedan, Tampo Traveller etc as per ur
+                    requirement
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3>Vast fleet</h3>
-                <p>
-                  We have all kinds of Car on Rent available like Sedan, Suv,
-                  Muv, Premium Sedan, Tampo Traveller etc as per ur requirement
-                </p>
+              <div className="car-card">
+                <div>
+                  <img src={money} alt="money" />
+                </div>
+                <div>
+                  <h3>Great tariffs</h3>
+                  <p>
+                    Rent A Car !Our car hire tariff are very low when compare to
+                    other operators in Lucknow. Book online cabs with best
+                    prices in Lucknow at Yatri Car Rental
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="car-card">
-              <div>
-                <img src={money} alt="money" />
-              </div>
-              <div>
-                <h3>Great tariffs</h3>
-                <p>
-                  Rent A Car !Our car hire tariff are very low when compare to
-                  other operators in Lucknow. Book online cabs with best prices
-                  in Lucknow at Yatri Car Rental
-                </p>
-              </div>
-            </div>
             </div>
           </div>
         </div>
@@ -185,7 +192,7 @@ const Home = () => {
           <li>
             <span className="text-bold">Service You Can Trust -</span> At Yatri
             Car Rental, we are dedicated to providing dependable services in
-            INDIA. We guarantee that we won't cancel any bookings without
+            INDIA. We guarantee that we wont cancel any bookings without
             advance notification, and our rental cars are meticulously
             maintained to ensure a seamless and stress-free journey for our
             clients.
