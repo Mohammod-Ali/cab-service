@@ -9,7 +9,7 @@ import background from '../../assets/BG Banner.png'
 const Home = () => {
     return (
         <>
-        <img src={background} alt="" />
+        
          <div>
             <h1 className='heading text-clr'>​India's Leading One-Way Inter-City Cab Service Provider</h1>
             <div className='dFlex'>
@@ -34,6 +34,29 @@ const Home = () => {
             <p>Our oneway cab service is cheaper than AC bus and 2 tier AC train ticket fares, it reduces your travel time and you travel at your own private space also to enjoy your journey. Our one way taxi will come at your doorstep and take you to your desired destination. So book you oneway cab from Lucknow to Gorakhpur or Varanasi to Bareilly</p>
             <p>read More....</p>
         </div>
+
+        {/* Why choose one way cab section */}
+        <div>
+            <h2 className='heading text-clr'>Why Choose Oneway Cab?</h2>
+            <div className='dFlex'>
+            <div>
+                <p>Instant Booking & Confirmation</p>
+                <p>Confirmed Booking Immediately</p>
+                <p>No Return Fare for One-Way Trip</p>
+                <p>Clean & Professional Cab Services</p>
+                <p>No Night or Luggage Charges</p>
+            </div>
+            <div>
+                <p>Pick-up from your house</p>
+                <p>Dedicated Cab just for you</p>
+                <p>Drop to your desired destination</p>
+                <p>Completed more than 20,000+ One-Way Trips</p>
+                <p>Multiple Payment Option including Credit Card.</p>
+            </div>
+            </div>
+        </div>
+
+        
         </>
        
     );
