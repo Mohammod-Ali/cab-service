@@ -39,3 +39,18 @@
 .text-bold{
     font-weight: bold;
 }
+
+.car-rental-section{
+    display: flex;
+    align-items: center;
+    border: 2px solid #60A547;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.car-card{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
