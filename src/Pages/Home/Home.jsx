@@ -15,7 +15,6 @@ const Home = () => {
 
     const [roundTrip, setRoundTrip] = useState(true)
     const [localTrip, setLocalTrip] = useState(false)
-    const [airport, setAirport] = useState(false)
 
   return (
     <>
