@@ -9,84 +9,22 @@ import mobile from "../../assets/mobile.png";
 import people from "../../assets/people.png";
 import money from "../../assets/money-recive.png";
 import banner from "../../assets/Road Trip by car image 1.png";
-import { useState } from "react";
 import TripType from "../TripType/TripType";
 
 const Home = () => {
-
-    // const [roundTrip, setRoundTrip] = useState(true)
-    // const [localTrip, setLocalTrip] = useState(false)
-
   return (
     <>
       <div>
         <img className="banner-img" src={banner} alt="Road Trip by car" />
       </div>
       {/* form section */}
-      {/* <div>
-        <div className="dFlex">
-          <div className="form-btn">
-            <button onClick={() => setLocalTrip(false)} style={{ backgroundColor: "#38B000", color: "white" }}>
-              Outstation
-            </button>
-            <button onClick={() => setLocalTrip(true)}>Local</button>
-            <button onClick={() => setAirport(true)}>Airport</button>
-          </div>
-        </div>
-       {
-            localTrip ? ' ' :  <div className="dFlex">
-            <div className="form-btn">
-              <button onClick={() => setRoundTrip(true)} style={{ backgroundColor: "#38B000", color: "white" }}>
-                One Way
-              </button>
-              <button onClick={() => setRoundTrip(false)}>Round Trip</button>
-            </div>
-          </div>
-       }
-       
-        
-        { 
-            localTrip ? <form className="form-style" action="">
-            <input type="text" placeholder="From" />
-            <input type="text" placeholder="To" />
-            <input type="date" name="" id="" placeholder="Pick Up Date"/>
-            <button style={{ backgroundColor: "#38B000", color: "white",  }}>
-              Explore 
-            </button>
-          </form>
-            :
-            roundTrip ? <form className="form-style" action="">
-            <input type="text" placeholder="From" />
-            <input type="text" placeholder="To" />
-            <input type="date" name="" id="" placeholder="Pick Up Date"/>
-            <button style={{ backgroundColor: "#38B000", color: "white",  }}>
-              Explore Cabs
-            </button>
-          </form>
-          :
-          <form className="form-style" action="">
-          <input type="text" placeholder="From" />
-          <input type="text" placeholder="To" />
-          <input type="date" name="" id="" placeholder="Pick Up Date"/>
-          <input type="date" name="" id="" placeholder="Return Date"/>
-          <input type="time" name="" id="" placeholder="Pick Up At" />
-          <button style={{ backgroundColor: "#38B000", color: "white",  }}>
-            Explore Cabs
-          </button>
-        </form>
-       
-        
-        }
-        
-
-      </div> */}
       <TripType></TripType>
       {/* form section end */}
-      <div>
+      <div style={{marginTop: '30px'}}>
         <h1 className="heading text-clr">
           ​Indias Leading One-Way Inter-City Cab Service Provider
         </h1>
-        <div className="dFlex">
+        <div className="homeDFlex">
           <div>
             <img src={car} alt="car" />
           </div>
@@ -139,7 +77,7 @@ const Home = () => {
           <h2 style={{ textAlign: "center" }} className="upperCase text-clr">
             Why choose Yatri Car Rental?
           </h2>
-          <div className="dFlex">
+          <div className="homeDFlex">
             <div>
               <div className="car-card">
                 <div>
@@ -202,7 +140,7 @@ const Home = () => {
       {/* Why choose one way cab section */}
       <div>
         <h2 className="heading text-clr">Why Choose Oneway Cab?</h2>
-        <div className="dFlex upperCase">
+        <div className="homeDFlex upperCase">
           <div>
             <ul>
               <li>Instant Booking & Confirmation</li>
@@ -245,7 +183,7 @@ const Home = () => {
         <h1 className="text-clr">Why Choose Yatri Car Rental?</h1>
         <ul className="chose-rental-list">
           <li>
-            <span className="text-bold"></span> Yatri Car Rental has been a
+            <span className="text-bold">Yatri Car Rental</span>  has been a
             trusted digital platform for booking local and outstation car rental
             and taxi services since 2014. Our primary goal is to offer our
             clients an exceptional car rental and cab booking experience, and we

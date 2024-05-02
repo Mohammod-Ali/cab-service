@@ -18,9 +18,10 @@
 }
 
 .trip-type-btn button {
-    width: 100px;
+    /* width: 100px; */
     margin-left: 15px;
     margin-top: 6px; 
+    margin-bottom: 6px; 
     border: none;
     border-radius: 5px;
     padding: 10px 20px;

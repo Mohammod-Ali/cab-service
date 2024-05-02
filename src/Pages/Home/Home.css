@@ -40,7 +40,7 @@
     width: 350px;
 }
 
-.dFlex{
+.homeDFlex{
     display: flex;
     justify-content: space-around;
 }

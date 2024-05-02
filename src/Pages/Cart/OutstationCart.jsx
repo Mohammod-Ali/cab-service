@@ -7,24 +7,24 @@ const OutstationCart = () => {
         <p className="cart-header">Fare Details</p>
         {/* cart details start here */}
         <div>
-          <div className="dFlex">
+          <div className="dFlex ">
             <p>Ride Estimate</p>
             <p>Rs. {"00.00"}</p>
           </div>
           <hr />
-          <div className="dFlex">
+          <div className="dFlex ">
             <p>Included KM</p>
             <p>{"0"} KM</p>
           </div>
-          <div className="dFlex">
+          <div className="dFlex ">
             <p>Extra fare/Km</p>
             <p>RS. {"00.00"}</p>
-          </div>   
-          <div className="dFlex">
+          </div>
+          <div className="dFlex ">
             <p>Driver charges</p>
             <p>Rs. {"00.00"}</p>
           </div>
-          <div className="dFlex">
+          <div className="dFlex ">
             <p>Night charges</p>
             <p>Rs. {"00.00"}</p>
           </div>
@@ -35,8 +35,10 @@ const OutstationCart = () => {
         <button className="cart-btn">Inclusions</button>
         <div>
           <p className="cart-text-bar">
-            {300}km @Rs.{10}/km<br /> 
-            Driver Allowance Rs.{300}/day X 1 day<br /> 
+            {300}km @Rs.{10}/km
+            <br />
+            Driver Allowance Rs.{300}/day X 1 day
+            <br />
             GST {`(5%)`}
           </p>
         </div>
