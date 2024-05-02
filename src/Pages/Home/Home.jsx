@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./Home.css";
 import car from "../../assets/seodata-image 1.png";
 import handLogo from "../../assets/hand-holding-up-a-sprout-svgrepo-com 1.png";
@@ -10,11 +9,13 @@ import mobile from "../../assets/mobile.png";
 import people from "../../assets/people.png";
 import money from "../../assets/money-recive.png";
 import banner from "../../assets/Road Trip by car image 1.png";
+import { useState } from "react";
+import TripType from "../TripType/TripType";
 
 const Home = () => {
 
-    const [roundTrip, setRoundTrip] = useState(true)
-    const [localTrip, setLocalTrip] = useState(false)
+    // const [roundTrip, setRoundTrip] = useState(true)
+    // const [localTrip, setLocalTrip] = useState(false)
 
   return (
     <>
@@ -22,7 +23,7 @@ const Home = () => {
         <img className="banner-img" src={banner} alt="Road Trip by car" />
       </div>
       {/* form section */}
-      <div>
+      {/* <div>
         <div className="dFlex">
           <div className="form-btn">
             <button onClick={() => setLocalTrip(false)} style={{ backgroundColor: "#38B000", color: "white" }}>
@@ -78,7 +79,8 @@ const Home = () => {
         }
         
 
-      </div>
+      </div> */}
+      <TripType></TripType>
       {/* form section end */}
       <div>
         <h1 className="heading text-clr">

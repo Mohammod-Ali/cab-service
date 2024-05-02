@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css'
 import logo from '../../assets/RIDE EVEE Logo 1.png'
 

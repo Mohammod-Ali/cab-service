@@ -1,0 +1,69 @@
+.form-btn-container{
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.form-btn{
+  border: none;
+  border-radius: 5px;
+  margin-left: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+  
+}
+.bg-color{
+  background-color: #4caf50; 
+  color: #fff;
+}
+
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .form-row-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .row-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  
+  label {
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="time"],
+  input[type="date"],
+  input[type="email"],
+  input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50; /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Ensure the button takes up the full width */
+  }
+  
