@@ -1,8 +1,8 @@
-import './form.css'
+import "./form.css";
 
 const LocalForm = () => {
-  const handleLocalFormData = event => {
-    event.preventDefault()
+  const handleLocalFormData = (event) => {
+    event.preventDefault();
     const customer = event.target.customer.value;
     const location = event.target.location.value;
     const pickUpDate = event.target.date.value;
@@ -13,11 +13,22 @@ const LocalForm = () => {
     const passengerEmail = event.target.email.value;
     const contactNumber = event.target.number.value;
 
-    console.log(customer, location, pickUpDate, pickUpTime, hourlyPackageName, cabType, passengerName, passengerEmail, contactNumber)
-  }
-    return (
-        <div>
-            <form onSubmit={handleLocalFormData} className="form-container" action="">
+    console.log(
+      customer,
+      location,
+      pickUpDate,
+      pickUpTime,
+      hourlyPackageName,
+      cabType,
+      passengerName,
+      passengerEmail,
+      contactNumber
+    );
+    alert("booking confirmed");
+  };
+  return (
+    <div>
+      <form onSubmit={handleLocalFormData} className="form-container" action="">
         <div className="form-row">
           <label htmlFor="customer">Select Customer</label>
           <input
@@ -106,8 +117,8 @@ const LocalForm = () => {
 
         <input type="submit" value="Create Booking" />
       </form>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default LocalForm;

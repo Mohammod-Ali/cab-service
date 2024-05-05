@@ -3,48 +3,85 @@ import "./form.css";
 
 const OutstationForm = () => {
   const [roundTrip, setRoundTrip] = useState(true);
-//   const [oneWay, setOneWay] = useState(false);
+  //   const [oneWay, setOneWay] = useState(false);
 
-const handleRoundTripFormData = event => {
-  event.preventDefault()
-  const customer = event.target.customer.value;
-  const pickUpLocation = event.target.pickUpLocation.value;
-  const dropOffLocation = event.target.dropOffLocation.value;
-  const fromDate = event.target.fromDate.value;
-  const toDate = event.target.toDate.value;
-  const pickUpTime = event.target.time.value;
-  const cabType = event.target.type.value;
-  const passengerName = event.target.name.value;
-  const passengerEmail = event.target.email.value;
-  const contactNumber = event.target.number.value;
- 
-  console.log(customer, pickUpLocation, dropOffLocation, fromDate, toDate, pickUpTime, cabType, passengerName, passengerEmail, contactNumber )
-}
+  const handleRoundTripFormData = (event) => {
+    event.preventDefault();
+    const customer = event.target.customer.value;
+    const pickUpLocation = event.target.pickUpLocation.value;
+    const dropOffLocation = event.target.dropOffLocation.value;
+    const fromDate = event.target.fromDate.value;
+    const toDate = event.target.toDate.value;
+    const pickUpTime = event.target.time.value;
+    const cabType = event.target.type.value;
+    const passengerName = event.target.name.value;
+    const passengerEmail = event.target.email.value;
+    const contactNumber = event.target.number.value;
 
-const handleOneWayFormData = event => {
-  event.preventDefault()
-  const customer = event.target.customer.value;
-  const pickUpLocation = event.target.pickUpLocation.value;
-  const dropOffLocation = event.target.dropOffLocation.value;
-  const pickUpDate = event.target.date.value;
-  const pickUpTime = event.target.time.value;
-  const cabType = event.target.type.value;
-  const passengerName = event.target.name.value;
-  const passengerEmail = event.target.email.value;
-  const contactNumber = event.target.number.value;
-  console.log(customer, pickUpLocation, dropOffLocation, pickUpDate, pickUpTime, cabType, passengerName, passengerEmail, contactNumber)
-}
+    console.log(
+      customer,
+      pickUpLocation,
+      dropOffLocation,
+      fromDate,
+      toDate,
+      pickUpTime,
+      cabType,
+      passengerName,
+      passengerEmail,
+      contactNumber
+    );
+    alert("booking confirmed");
+  };
+
+  const handleOneWayFormData = (event) => {
+    event.preventDefault();
+    const customer = event.target.customer.value;
+    const pickUpLocation = event.target.pickUpLocation.value;
+    const dropOffLocation = event.target.dropOffLocation.value;
+    const pickUpDate = event.target.date.value;
+    const pickUpTime = event.target.time.value;
+    const cabType = event.target.type.value;
+    const passengerName = event.target.name.value;
+    const passengerEmail = event.target.email.value;
+    const contactNumber = event.target.number.value;
+    console.log(
+      customer,
+      pickUpLocation,
+      dropOffLocation,
+      pickUpDate,
+      pickUpTime,
+      cabType,
+      passengerName,
+      passengerEmail,
+      contactNumber
+    );
+    alert("booking confirmed");
+  };
 
   return (
     <div>
       <div className="form-btn-container">
-      <button className={`form-btn ${(roundTrip === false) && 'bg-color' }`} onClick={() => setRoundTrip(false)}>One Way</button>
-      <button className={`form-btn ${roundTrip &&'bg-color' }`} onClick={() => setRoundTrip(true)}>Round Trip </button>
+        <button
+          className={`form-btn ${roundTrip === false && "bg-color"}`}
+          onClick={() => setRoundTrip(false)}
+        >
+          One Way
+        </button>
+        <button
+          className={`form-btn ${roundTrip && "bg-color"}`}
+          onClick={() => setRoundTrip(true)}
+        >
+          Round Trip{" "}
+        </button>
       </div>
 
       {/* Outstation one way form start here */}
       {roundTrip ? (
-        <form onSubmit={handleRoundTripFormData} className="form-container" action="">
+        <form
+          onSubmit={handleRoundTripFormData}
+          className="form-container"
+          action=""
+        >
           <div className="form-row">
             <label htmlFor="customer">Select Customer</label>
             <input
@@ -146,12 +183,15 @@ const handleOneWayFormData = event => {
           </div>
           <input type="submit" value="Create Booking" />
         </form>
-      /* Outstation one way form end here */
-
       ) : (
+        /* Outstation one way form end here */
 
         /* Outstation Round trip start here */
-        <form onSubmit={handleOneWayFormData} className="form-container" action="">
+        <form
+          onSubmit={handleOneWayFormData}
+          className="form-container"
+          action=""
+        >
           <div className="form-row">
             <label htmlFor="customer">Select Customer</label>
             <input
@@ -247,11 +287,6 @@ const handleOneWayFormData = event => {
         </form>
         /* Outstation Round trip end here */
       )}
-
-
-      
-
-      
     </div>
   );
 };

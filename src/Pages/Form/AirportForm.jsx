@@ -29,6 +29,7 @@ const AirportForm = () => {
       passengerEmail,
       contactNumber
     );
+    alert("booking confirmed");
   };
 
   const handleToTheAirportData = (event) => {
@@ -44,7 +45,19 @@ const AirportForm = () => {
     const passengerEmail = event.target.email.value;
     const contactNumber = event.target.number.value;
 
-    console.log(customer, cityName, airportName, pickUpAddress, pickUpDate, pickUpTime, cabType, passengerName, passengerEmail, contactNumber)
+    console.log(
+      customer,
+      cityName,
+      airportName,
+      pickUpAddress,
+      pickUpDate,
+      pickUpTime,
+      cabType,
+      passengerName,
+      passengerEmail,
+      contactNumber
+    );
+    alert("booking confirmed");
   };
 
   return (
